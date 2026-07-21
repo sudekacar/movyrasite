@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "title": "Movyra AI | Clinical Decision Support Platform",
+    "description": "On-Premises & KVKK-compliant multimodal RAG/LLM platform for fast medical diagnostics and clinical workflow automation."
+  },
+  "nav": {
+    "architecture": "Architecture",
+    "features": "Features",
+    "security": "KVKK / Security",
+    "team": "Team",
+    "cta": "Request Demo"
+  },
+  "hero": {
+    "badge": "ITU Cekirdek Health & Life Sciences 2026",
+    "title": "AI-Powered Clinical Decision Support Platform for Healthcare & Life Sciences",
+    "subtitle": "On-Premises & KVKK compliant multimodal RAG/LLM platform for fast medical diagnostics and clinical workflow automation.",
+    "primaryCta": "Explore Platform",
+    "secondaryCta": "View Architecture",
+    "mockup": {
+      "title": "Movyra AI Diagnostic Dashboard",
+      "status": "Live Analysis",
+      "parsing": "Parsing clinical data…",
+      "confidence": "Confidence",
+      "latency": "Latency",
+      "sources": "Sources",
+      "patientDemographics": "Patient Demographics",
+      "patientProfile": "57M · Male · Risk: Moderate"
+    }
+  },
+  "security": {
+    "eyebrow": "KVKK & Data Security",
+    "title": "Zero data leakage. Full On-Premises control.",
+    "subtitle": "Patient data never leaves your institution. Movyra AI runs with a closed-loop security architecture and strict KVKK / GDPR compliance for clinical environments.",
+    "items": {
+      "onPrem": {
+        "title": "On-Premises Storage",
+        "description": "All data and models stay on institutional infrastructure — no mandatory cloud egress."
+      },
+      "anonymized": {
+        "title": "Anonymized AI Pipelines",
+        "description": "Personal health information is automatically masked and filtered before reaching model layers."
+      },
+      "audit": {
+        "title": "Audit Logs",
+        "description": "Every access and inference event is captured with timestamped, traceable audit trails."
+      },
+      "closedLoop": {
+        "title": "Closed-Loop Security",
+        "description": "Network isolation, role-based access, and zero-trust principles protect the stack end to end."
+      }
+    }
+  },
+  "architecture": {
+    "eyebrow": "Technical Architecture",
+    "title": "From clinical data to action in four steps",
+    "subtitle": "An end-to-end multimodal pipeline from DICOM, EHR, and clinical notes to secure decision support.",
+    "steps": {
+      "ingestion": {
+        "title": "Data Ingestion",
+        "description": "DICOM imaging, EHR records, and clinical notes enter through secure institutional channels."
+      },
+      "privacy": {
+        "title": "Anonymization & Privacy Filter",
+        "description": "Identifiers and sensitive fields are scrubbed automatically before the KVKK privacy layer."
+      },
+      "engine": {
+        "title": "Multimodal RAG & LLM Engine",
+        "description": "Text, tabular, and imaging signals are enriched with on-prem knowledge for grounded inference."
+      },
+      "dashboard": {
+        "title": "Clinical Action & Decision Dashboard",
+        "description": "Summaries, confidence scores, and recommended actions integrate into clinician workflows."
+      }
+    }
+  },
+  "demo": {
+    "eyebrow": "Interactive Simulator",
+    "title": "Try the diagnostic engine with sample cases",
+    "subtitle": "Switch between preset clinical scenarios to explore simulated Movyra AI outputs.",
+    "accuracy": "Accuracy",
+    "confidence": "Confidence Score",
+    "processing": "Processing",
+    "output": "AI Output",
+    "patientDemographics": "Patient Demographics",
+    "patientBadge": "57M Male · Active Case",
+    "cases": {
+      "clinical": {
+        "label": "Clinical Report Analysis",
+        "input": "57M with exertional dyspnea and intermittent chest pain. ECG shows nonspecific ST changes. Troponin borderline.",
+        "output": "High likelihood of stable angina / ACS concern. Risk stratification and cardiology consult advised. Prioritize troponin trend and stress testing.",
+        "accuracy": "94.2%",
+        "confidence": "91%"
+      },
+      "lab": {
+        "label": "Laboratory Data Summarization",
+        "input": "WBC 12.4, CRP 48, PCT 0.8, Creatinine 1.6, eGFR 48, Na 132, K 5.1 — serial labs over 72 hours.",
+        "output": "Inflammatory response with mild–moderate renal impairment pattern. Early sepsis thresholds partially met; monitor fluid balance and antibiotic response.",
+        "accuracy": "96.8%",
+        "confidence": "93%"
+      },
+      "imaging": {
+        "label": "Imaging & OCR",
+        "input": "PA chest X-ray report (OCR): right lower zone consolidation, mild pleural effusion, borderline cardiac silhouette.",
+        "output": "Radiologic findings consistent with community-acquired pneumonia. Clinical correlation and antibiotic protocol recommended; consider follow-up imaging in 48–72h.",
+        "accuracy": "92.5%",
+        "confidence": "88%"
+      }
+    }
+  },
+  "team": {
+    "eyebrow": "Multi-Disciplinary Team",
+    "title": "Core competencies building clinical AI end to end",
+    "subtitle": "Technology, finance, compliance, and operational excellence at one table.",
+    "domains": {
+      "ai": {
+        "title": "System & AI Architecture",
+        "description": "Design of multimodal RAG, LLM orchestration, and on-prem inference infrastructure."
+      },
+      "finance": {
+        "title": "Financial & Banking Strategy",
+        "description": "Sustainable growth, investment modeling, and institutional partnership strategy."
+      },
+      "compliance": {
+        "title": "Operations & Compliance",
+        "description": "KVKK/GDPR processes, clinical validation, and operational governance."
+      },
+      "industrial": {
+        "title": "Industrial Process & Optimization",
+        "description": "Hospital workflow measurement, bottleneck analysis, and efficiency improvement."
+      }
+    }
+  },
+  "footer": {
+    "tagline": "On-Premises clinical decision support for healthcare and life sciences.",
+    "itu": "Aligned with ITU Cekirdek Health & Life Sciences 2026.",
+    "contact": "Contact",
+    "email": "movyra@qybitlabs.com",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "kvkk": "KVKK Notice",
+    "terms": "Terms of Use",
+    "rights": "All rights reserved."
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "locale": {
+    "tr": "TR",
+    "en": "EN"
+  },
+  "ads": {
+    "label": "Advertisement",
+    "sponsored": "Sponsored",
+    "placeholder": "AdSense slot — skeleton placeholder in local development"
+  }
+}

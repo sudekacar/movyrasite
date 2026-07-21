@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "title": "Movyra AI | Klinik Karar Destek Platformu",
+    "description": "On-Premises & KVKK uyumlu multimodal RAG/LLM platformu ile sağlık ve yaşam bilimlerinde hızlı tanı ve klinik iş akışı otomasyonu."
+  },
+  "nav": {
+    "architecture": "Mimari",
+    "features": "Özellikler",
+    "security": "KVKK / Güvenlik",
+    "team": "Ekip",
+    "cta": "Demo Talebi"
+  },
+  "hero": {
+    "badge": "İTÜ Çekirdek Sağlık & Yaşam Bilimleri 2026",
+    "title": "Sağlık ve Yaşam Bilimlerinde Yapay Zeka Destekli Karar Destek Sistemleri",
+    "subtitle": "On-Premises & KVKK uyumlu multimodal RAG/LLM platformu ile hızlı tıbbi tanı ve klinik iş akışı otomasyonu.",
+    "primaryCta": "Sistemi İncele",
+    "secondaryCta": "Mimari Dokümantasyon",
+    "mockup": {
+      "title": "Movyra AI Tanı Paneli",
+      "status": "Canlı Analiz",
+      "parsing": "Klinik veri ayrıştırılıyor…",
+      "confidence": "Güven",
+      "latency": "Gecikme",
+      "sources": "Kaynaklar",
+      "patientDemographics": "Hasta Demografisi",
+      "patientProfile": "57Y · Erkek · Risk: Orta"
+    }
+  },
+  "security": {
+    "eyebrow": "KVKK & Veri Güvenliği",
+    "title": "Sıfır veri sızıntısı. Tam On-Premises kontrol.",
+    "subtitle": "Hasta verisi kurum dışına çıkmaz. Movyra AI, kapalı döngü güvenlik mimarisi ve sıkı KVKK / GDPR uyumu ile klinik ortamlarda güvenle çalışır.",
+    "items": {
+      "onPrem": {
+        "title": "On-Premises Depolama",
+        "description": "Tüm veri ve modeller kurum içi altyapıda kalır; buluta çıkış zorunluluğu yoktur."
+      },
+      "anonymized": {
+        "title": "Anonimleştirilmiş AI Hatları",
+        "description": "Kişisel sağlık verisi, model katmanına ulaşmadan önce otomatik olarak maskelenir ve filtrelenir."
+      },
+      "audit": {
+        "title": "Denetim Kayıtları",
+        "description": "Her erişim ve çıkarım işlemi zaman damgalı, izlenebilir audit loglarıyla kayıt altına alınır."
+      },
+      "closedLoop": {
+        "title": "Kapalı Döngü Güvenlik",
+        "description": "Ağ izolasyonu, rol tabanlı erişim ve sıfır-güven ilkeleriyle uçtan uca koruma."
+      }
+    }
+  },
+  "architecture": {
+    "eyebrow": "Teknik Mimari",
+    "title": "Klinik veriden aksiyona, dört adımlı akış",
+    "subtitle": "DICOM, EHR ve klinik notlardan güvenli karar desteğine kadar uçtan uca multimodal pipeline.",
+    "steps": {
+      "ingestion": {
+        "title": "Veri Alımı",
+        "description": "DICOM görüntüleri, EHR kayıtları ve klinik notlar güvenli kanallarla sisteme alınır."
+      },
+      "privacy": {
+        "title": "Anonimleştirme & Gizlilik Filtresi",
+        "description": "Kimlik bilgileri ve hassas alanlar otomatik olarak temizlenir; KVKK katmanı devreye girer."
+      },
+      "engine": {
+        "title": "Multimodal RAG & LLM Motoru",
+        "description": "Metin, tablo ve görüntü sinyalleri kurum içi bilgi bankasıyla zenginleştirilerek çıkarım yapılır."
+      },
+      "dashboard": {
+        "title": "Klinik Aksiyon & Karar Paneli",
+        "description": "Özetler, güven skorları ve önerilen aksiyonlar hekim iş akışına entegre edilir."
+      }
+    }
+  },
+  "demo": {
+    "eyebrow": "İnteraktif Simülatör",
+    "title": "Tanı motorunu örnek vakalarla deneyin",
+    "subtitle": "Önceden tanımlı klinik senaryolar arasında geçiş yaparak Movyra AI çıktılarını simüle edin.",
+    "accuracy": "Doğruluk",
+    "confidence": "Güven Skoru",
+    "processing": "İşleniyor",
+    "output": "AI Çıktısı",
+    "patientDemographics": "Hasta Demografisi",
+    "patientBadge": "57Y Erkek · Aktif Vaka",
+    "cases": {
+      "clinical": {
+        "label": "Klinik Rapor Analizi",
+        "input": "57 yaş erkek hasta, efor dispnesi ve intermittan göğüs ağrısı. EKG nonspesifik ST değişiklikleri. Troponin borderline.",
+        "output": "Yüksek olasılıklı stabil anjina / ACS şüphesi. Risk skorlaması ve kardiyoloji konsültasyonu önerilir. Troponin trendi ve stres testi önceliklendirilmeli.",
+        "accuracy": "94.2%",
+        "confidence": "91%"
+      },
+      "lab": {
+        "label": "Laboratuvar Veri Özetleme",
+        "input": "WBC 12.4, CRP 48, PCT 0.8, Kreatinin 1.6, eGFR 48, Na 132, K 5.1 — 72 saatlik seri ölçümler.",
+        "output": "Enflamatuar yanıt + hafif-orta böbrek fonksiyon bozukluğu paterni. Sepsis erken uyarı eşikleri kısmen aşılmış; sıvı dengesi ve antibiyotik yanıtı izlenmeli.",
+        "accuracy": "96.8%",
+        "confidence": "93%"
+      },
+      "imaging": {
+        "label": "Görüntüleme & OCR",
+        "input": "PA akciğer grafisi raporu (OCR): sağ alt zonda konsolidasyon, hafif plevral efüzyon, kalp silueti sınırda.",
+        "output": "Toplum kökenli pnömoni ile uyumlu radyolojik bulgular. Klinik korelasyon ve antibiyotik protokolü önerilir; 48–72 saat kontrol görüntüleme planlanabilir.",
+        "accuracy": "92.5%",
+        "confidence": "88%"
+      }
+    }
+  },
+  "team": {
+    "eyebrow": "Çok Disiplinli Ekip",
+    "title": "Klinik AI’yi uçtan uca inşa eden çekirdek yetkinlikler",
+    "subtitle": "Teknoloji, finans, uyum ve operasyonel mükemmellik aynı masa etrafında.",
+    "domains": {
+      "ai": {
+        "title": "Sistem & AI Mimarisi",
+        "description": "Multimodal RAG, LLM orkestrasyonu ve on-prem çıkarım altyapısının tasarımı."
+      },
+      "finance": {
+        "title": "Finansal & Bankacılık Stratejisi",
+        "description": "Sürdürülebilir büyüme, yatırım modeli ve kurumsal ortaklık stratejisi."
+      },
+      "compliance": {
+        "title": "Operasyon & Uyum",
+        "description": "KVKK/GDPR süreçleri, klinik validasyon ve operasyonel yönetişim."
+      },
+      "industrial": {
+        "title": "Endüstriyel Süreç & Optimizasyon",
+        "description": "Hastane iş akışlarının ölçümü, darboğaz analizi ve verimlilik iyileştirmesi."
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Sağlık ve yaşam bilimleri için On-Premises klinik karar destek platformu.",
+    "itu": "İTÜ Çekirdek Sağlık & Yaşam Bilimleri 2026 programı ile hizalı.",
+    "contact": "İletişim",
+    "email": "movyra@qybitlabs.com",
+    "legal": "Yasal",
+    "privacy": "Gizlilik Politikası",
+    "kvkk": "KVKK Aydınlatma Metni",
+    "terms": "Kullanım Koşulları",
+    "rights": "Tüm hakları saklıdır."
+  },
+  "theme": {
+    "light": "Aydınlık",
+    "dark": "Karanlık"
+  },
+  "locale": {
+    "tr": "TR",
+    "en": "EN"
+  },
+  "ads": {
+    "label": "Reklam alanı",
+    "sponsored": "Sponsorlu",
+    "placeholder": "AdSense alanı — yerel geliştirmede iskelet görünümü"
+  }
+}
