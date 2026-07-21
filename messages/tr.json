@@ -138,6 +138,7 @@
     "legal": "Yasal",
     "privacy": "Gizlilik Politikası",
     "kvkk": "KVKK Aydınlatma Metni",
+    "cookies": "Çerez Politikası",
     "terms": "Kullanım Koşulları",
     "rights": "Tüm hakları saklıdır."
   },
@@ -153,5 +154,41 @@
     "label": "Reklam alanı",
     "sponsored": "Sponsorlu",
     "placeholder": "AdSense alanı — yerel geliştirmede iskelet görünümü"
+  },
+  "privacy": {
+    "metaTitle": "Gizlilik Politikası & KVKK",
+    "metaDescription": "Movyra AI gizlilik politikası: KVKK/GDPR uyumu, On-Premises veri izolasyonu, çerezler ve Google AdSense bilgilendirmesi.",
+    "eyebrow": "Yasal & Uyum",
+    "title": "Gizlilik Politikası, KVKK Aydınlatma Metni ve Çerez Politikası",
+    "updated": "Son güncelleme: 21 Temmuz 2026",
+    "intro": "Bu metin, Movyra AI (Qybit Labs) web sitesi ziyaretçilerinin kişisel verilerinin nasıl işlendiğini, On-Premises ürün mimarisinin hasta verisini nasıl izole ettiğini ve Google AdSense dahil üçüncü taraf reklam/çerez uygulamalarını açıklar. Site: https://movyra.qybitlabs.com",
+    "contactLabel": "KVKK ve gizlilik talepleri için:",
+    "backHome": "Ana sayfaya dön",
+    "sections": {
+      "controller": {
+        "title": "Veri Sorumlusu",
+        "body": "Web sitesi üzerinden toplanan sınırlı ziyaretçi verilerinin sorumlusu Qybit Labs / Movyra AI ekibidir. İletişim: movyra@qybitlabs.com. Klinik ürün ortamında hasta sağlık verisi kurum müşterisinin On-Premises altyapısında kalır; Movyra AI pazarlama sitesi klinik EHR/DICOM verisini işlemez veya saklamaz."
+      },
+      "onPrem": {
+        "title": "On-Premises Veri İzolasyonu",
+        "body": "Movyra AI klinik karar destek platformu On-Premises dağıtım modeliyle tasarlanmıştır. Hasta kimliği, tıbbi görüntü, laboratuvar ve klinik notlar kurum ağı içinde kalır; sıfır veri sızıntısı hedefiyle kapalı döngü güvenlik, anonimleştirme hatları ve denetim kayıtları uygulanır. Bu web sitesi yalnızca kurumsal tanıtım ve iletişim amaçlıdır."
+      },
+      "dataCollected": {
+        "title": "Toplanan Veriler",
+        "body": "Web sitesinde tipik olarak IP adresi, tarayıcı türü, sayfa görüntüleme ve yönlendirme bilgisi gibi teknik loglar; iletişim formu veya e-posta ile gönüllü olarak paylaştığınız ad, kurum ve iletişim bilgileri işlenebilir. Sağlık verisi talep edilmez. Veriler hizmetin sunulması, güvenlik, analitik ve yasal yükümlülükler kapsamında işlenir."
+      },
+      "cookies": {
+        "title": "Çerez Politikası",
+        "body": "Site; oturum/tema tercihleri için zorunlu çerezler, performans ölçümü için analitik çerezler ve Google AdSense onaylandığında reklam kişiselleştirme/ölçüm çerezleri kullanabilir. Tarayıcı ayarlarından çerezleri kısıtlayabilirsiniz; zorunlu çerezler olmadan bazı özellikler çalışmayabilir. Google’ın reklam çerezleri hakkında bilgi için Google’ın reklam ayarları ve politikalarına bakınız."
+      },
+      "adsense": {
+        "title": "Google AdSense ve Üçüncü Taraflar",
+        "body": "Google AdSense, sitede reklam göstermek için çerezler ve cihaz tanımlayıcıları kullanabilir. Üçüncü taraf reklam ağları, tarayıcınızdan doğrudan bilgi alabilir. AdSense hesabı onaylanana kadar yer tutucu banner gösterilir. Google’ın veri kullanımı: https://policies.google.com/technologies/ads. Avrupa Ekonomik Alanı kullanıcıları için kişiselleştirilmiş reklamlar ilgili onay çerçevelerine tabidir."
+      },
+      "rights": {
+        "title": "KVKK / GDPR Haklarınız",
+        "body": "6698 sayılı KVKK ve geçerli GDPR hükümleri kapsamında; kişisel verilerinize erişme, düzeltme, silme, işlemeyi kısıtlama, itiraz etme ve veri taşınabilirliği taleplerinde bulunabilirsiniz. Taleplerinizi movyra@qybitlabs.com adresine iletebilirsiniz. Şikayet hakkınız için Kişisel Verileri Koruma Kurumu’na (Türkiye) veya ilgili denetim otoritesine başvurabilirsiniz."
+      }
+    }
   }
 }

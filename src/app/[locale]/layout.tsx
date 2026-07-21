@@ -10,10 +10,13 @@ import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { GoogleAdBanner } from "@/components/ui/GoogleAdBanner";
+import { absoluteUrl, SITE_NAME, SITE_URL } from "@/lib/site";
 import "../globals.css";
 
-const ADSENSE_CLIENT =
-  process.env.NEXT_PUBLIC_ADSENSE_CLIENT ?? "ca-pub-XXXXXXXXXXXXXXXX";
+const ADSENSE_CLIENT_ID =
+  process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID ??
+  process.env.NEXT_PUBLIC_ADSENSE_CLIENT ??
+  "ca-pub-XXXXXXXXXXXXXXXX";
 const ADSENSE_SLOT_FOOTER =
   process.env.NEXT_PUBLIC_ADSENSE_SLOT_FOOTER ?? "1111111111";
 
@@ -51,10 +54,62 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
+  const canonical = absoluteUrl(`/${locale}`);
 
   return {
-    title: t("title"),
+    metadataBase: new URL(SITE_URL),
+    title: {
+      default: t("title"),
+      template: `%s | ${SITE_NAME}`,
+    },
     description: t("description"),
+    applicationName: SITE_NAME,
+    authors: [{ name: "Qybit Labs", url: SITE_URL }],
+    creator: "Qybit Labs",
+    publisher: "Qybit Labs",
+    keywords: [
+      "Movyra AI",
+      "clinical decision support",
+      "KVKK",
+      "GDPR",
+      "on-premises AI",
+      "multimodal RAG",
+      "healthcare AI",
+      "İTÜ Çekirdek",
+    ],
+    alternates: {
+      canonical,
+      languages: {
+        tr: absoluteUrl("/tr"),
+        en: absoluteUrl("/en"),
+        "x-default": absoluteUrl("/tr"),
+      },
+    },
+    openGraph: {
+      type: "website",
+      url: canonical,
+      siteName: SITE_NAME,
+      title: t("title"),
+      description: t("description"),
+      locale: locale === "tr" ? "tr_TR" : "en_US",
+      alternateLocale: locale === "tr" ? ["en_US"] : ["tr_TR"],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("description"),
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+        "max-video-preview": -1,
+      },
+    },
   };
 }
 
@@ -90,7 +145,7 @@ export default async function LocaleLayout({
         <Script
           id="adsense-loader"
           async
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`}
           strategy="afterInteractive"
           crossOrigin="anonymous"
         />

@@ -14,18 +14,27 @@ type GoogleAdBannerProps = {
   slot?: string;
   format?: "auto" | "horizontal" | "rectangle" | "vertical";
   className?: string;
-  /** Visual size hint for the skeleton / reserved space */
   size?: "leaderboard" | "rectangle" | "responsive";
 };
 
-const ADSENSE_CLIENT =
-  process.env.NEXT_PUBLIC_ADSENSE_CLIENT ?? "ca-pub-XXXXXXXXXXXXXXXX";
+const ADSENSE_CLIENT_ID =
+  process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID ??
+  process.env.NEXT_PUBLIC_ADSENSE_CLIENT ??
+  "ca-pub-XXXXXXXXXXXXXXXX";
 
 const SIZE_CLASSES: Record<NonNullable<GoogleAdBannerProps["size"]>, string> = {
   leaderboard: "min-h-[90px]",
   rectangle: "min-h-[250px]",
   responsive: "min-h-[100px] sm:min-h-[90px]",
 };
+
+function isUnconfiguredClientId(clientId: string): boolean {
+  return (
+    !clientId ||
+    clientId.includes("XXXXXXXX") ||
+    clientId === "ca-pub-0000000000000000"
+  );
+}
 
 export function GoogleAdBanner({
   slot = "0000000000",
@@ -38,11 +47,9 @@ export function GoogleAdBanner({
   const pushed = useRef(false);
   const [ready, setReady] = useState(false);
 
-  const isPlaceholderClient =
-    !process.env.NEXT_PUBLIC_ADSENSE_CLIENT ||
-    ADSENSE_CLIENT.includes("XXXXXXXX");
-  const isDev = process.env.NODE_ENV === "development";
-  const showFallback = isPlaceholderClient || isDev;
+  const showFallback =
+    process.env.NODE_ENV === "development" ||
+    isUnconfiguredClientId(ADSENSE_CLIENT_ID);
 
   useEffect(() => {
     if (showFallback || pushed.current) return;
@@ -58,10 +65,7 @@ export function GoogleAdBanner({
 
   return (
     <aside
-      className={cn(
-        "mx-auto w-full max-w-6xl px-4 sm:px-6",
-        className,
-      )}
+      className={cn("mx-auto w-full max-w-6xl px-4 sm:px-6", className)}
       aria-label={t("label")}
     >
       <div
@@ -86,7 +90,7 @@ export function GoogleAdBanner({
               <div className="h-3 w-1/2 animate-pulse rounded-full bg-accent-secondary/15" />
               <p className="mt-2 text-xs text-muted">{t("placeholder")}</p>
               <p className="font-mono text-[10px] text-muted/70">
-                client: {ADSENSE_CLIENT} · slot: {slot}
+                client: {ADSENSE_CLIENT_ID} · slot: {slot}
               </p>
             </div>
           </div>
@@ -98,7 +102,7 @@ export function GoogleAdBanner({
               "opacity-0": !ready,
             })}
             style={{ display: "block" }}
-            data-ad-client={ADSENSE_CLIENT}
+            data-ad-client={ADSENSE_CLIENT_ID}
             data-ad-slot={slot}
             data-ad-format={format}
             data-full-width-responsive="true"

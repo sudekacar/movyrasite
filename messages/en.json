@@ -138,6 +138,7 @@
     "legal": "Legal",
     "privacy": "Privacy Policy",
     "kvkk": "KVKK Notice",
+    "cookies": "Cookie Policy",
     "terms": "Terms of Use",
     "rights": "All rights reserved."
   },
@@ -153,5 +154,41 @@
     "label": "Advertisement",
     "sponsored": "Sponsored",
     "placeholder": "AdSense slot — skeleton placeholder in local development"
+  },
+  "privacy": {
+    "metaTitle": "Privacy Policy & KVKK",
+    "metaDescription": "Movyra AI privacy policy covering KVKK/GDPR compliance, On-Premises data isolation, cookies, and Google AdSense disclosures.",
+    "eyebrow": "Legal & Compliance",
+    "title": "Privacy Policy, KVKK Notice & Cookie Policy",
+    "updated": "Last updated: July 21, 2026",
+    "intro": "This notice explains how Movyra AI (Qybit Labs) processes limited visitor data on this website, how the On-Premises product architecture isolates patient data, and how third-party advertising cookies (including Google AdSense) may be used. Site: https://movyra.qybitlabs.com",
+    "contactLabel": "For privacy and KVKK requests:",
+    "backHome": "Back to home",
+    "sections": {
+      "controller": {
+        "title": "Data Controller",
+        "body": "Limited visitor data collected through this website is controlled by Qybit Labs / the Movyra AI team. Contact: movyra@qybitlabs.com. In clinical product deployments, patient health data remains on the customer’s On-Premises infrastructure; this marketing site does not process or store clinical EHR/DICOM data."
+      },
+      "onPrem": {
+        "title": "On-Premises Data Isolation",
+        "body": "The Movyra AI clinical decision support platform is designed for On-Premises deployment. Patient identifiers, medical imaging, laboratory results, and clinical notes stay within the institutional network under a zero-data-leakage model with closed-loop security, anonymization pipelines, and audit logging. This website is for corporate presentation and contact only."
+      },
+      "dataCollected": {
+        "title": "Data We Collect",
+        "body": "This website may process technical logs such as IP address, browser type, page views, and referrer information, plus voluntarily provided contact details (name, organization, email) if you reach out. We do not request health data on this site. Processing supports service delivery, security, analytics, and legal obligations."
+      },
+      "cookies": {
+        "title": "Cookie Policy",
+        "body": "We may use essential cookies for session/theme preferences, analytics cookies for performance measurement, and—once AdSense is approved—advertising cookies for measurement and personalization. You can restrict cookies in your browser; some features may not work without essential cookies. See Google’s ads settings and policies for advertising cookie details."
+      },
+      "adsense": {
+        "title": "Google AdSense & Third Parties",
+        "body": "Google AdSense may use cookies and device identifiers to serve ads. Third-party ad networks may receive information directly from your browser. Until AdSense is approved, a placeholder banner is shown. Google’s data use: https://policies.google.com/technologies/ads. Personalized ads for EEA users are subject to applicable consent frameworks."
+      },
+      "rights": {
+        "title": "Your KVKK / GDPR Rights",
+        "body": "Under Turkish Law No. 6698 (KVKK) and applicable GDPR provisions, you may request access, rectification, erasure, restriction, objection, and data portability regarding your personal data. Contact movyra@qybitlabs.com. You may also lodge a complaint with the Personal Data Protection Authority (Turkey) or your local supervisory authority."
+      }
+    }
   }
 }

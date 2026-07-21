@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Activity, Mail } from "lucide-react";
+import { Link } from "@/i18n/navigation";
 
 export function Footer() {
   const t = useTranslations("footer");
@@ -46,17 +47,28 @@ export function Footer() {
           </h3>
           <ul className="space-y-2 text-sm text-muted">
             <li>
-              <a href="#security" className="transition hover:text-accent">
+              <Link href="/privacy" className="transition hover:text-accent">
                 {t("privacy")}
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#security" className="transition hover:text-accent">
+              <Link
+                href="/privacy"
+                className="transition hover:text-accent"
+              >
                 {t("kvkk")}
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="mailto:movyra@qybitlabs.com" className="transition hover:text-accent">
+              <Link href="/privacy" className="transition hover:text-accent">
+                {t("cookies")}
+              </Link>
+            </li>
+            <li>
+              <a
+                href="mailto:movyra@qybitlabs.com"
+                className="transition hover:text-accent"
+              >
                 {t("terms")}
               </a>
             </li>
@@ -69,7 +81,7 @@ export function Footer() {
           <span>
             © {year} Movyra AI. {t("rights")}
           </span>
-          <span className="hidden sm:inline">Qybit Labs</span>
+          <span className="hidden sm:inline">Qybit Labs · movyra.qybitlabs.com</span>
         </div>
       </div>
     </footer>
